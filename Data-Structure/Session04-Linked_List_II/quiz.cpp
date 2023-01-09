@@ -27,24 +27,42 @@ struct Node * createNode(int x) {
 }
 
 void validation(struct Node *body) {
-    do {
-        if (body->val < head->val) {
-            body->next = head;
-            head->prev = body;
-            head = body;
-        }
-    } while (head->prev);
+    // do {
+    //     if (body->val < head->val) {
+    //         body->next = head;
+    //         head->prev = body;
+    //         head = body;
+    //     }
+    // } while (head->prev);
 
-    do {
-        if (body->val > tail->val) {
-            // if (tail->next != NULL) {
-            //     body->prev = 
-            // }
-            body->prev = tail;
-            tail->next = body;
-            tail = body;
+    // do {
+    //     if (body->val > tail->val) {
+    //         if ()
+    //         body->prev = tail;
+    //         tail->next = body;
+    //         tail = body;
+    //     }
+    // } while (tail->next);
+
+    if (body->val < head->val) {
+        body->next = head;
+        head->prev = body;
+        head = body;
+    } else if (body->val > tail->val) {
+        body->prev = tail;
+        tail->next = body;
+        tail = body;
+    } else {
+        struct Node *iteration = head;
+        // printf("head: %d | tail: %d\n", head->val, tail->val);
+        while (iteration->next->val < body->val) {
+            iteration = iteration->next;
         }
-    } while (tail->next);
+        body->prev = iteration;
+        body->next = iteration->next;
+        iteration->next = body;
+        iteration->next->prev = body;
+    }
     
 
     // Metode Pak Fikri

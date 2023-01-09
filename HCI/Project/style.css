@@ -1,0 +1,14 @@
+body {
+    font-size: 30px;
+    margin: 20px 0 0 90px;
+    font-family: 'Bebas Neue';
+    background-color: aqua;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+}
+
+/* .text{
+    color: yellow;
+} */

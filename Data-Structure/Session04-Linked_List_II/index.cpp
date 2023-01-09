@@ -36,11 +36,13 @@ int main() {
     }
     printf("\n");
 
-    // Extra Case 5 Delete: Hanya 1 element
+
+    // Extra Case 5 Delete: Hanya ada 1 element/node
     /*  
         free(head);
         head = tail = NULL; 
     */
+
 
     // Case 2: Insert last atau after tail
     struct Node *tmp = createNode(10);
@@ -55,12 +57,14 @@ int main() {
     }
     printf("\n");
 
+
     // Extra Case 6 : Delete element head
     /*  
         head = head->next;
         free(head->prev);
         head->prev = NULL; 
     */
+
 
     struct Node *tmp1 = createNode(15);
     tail->next = tmp1;
@@ -73,6 +77,7 @@ int main() {
         iter = iter->next;
     }
     printf("\n");
+
 
     // Extra Case 8: Delete element selain head dan tail (melakukan iterasi untuk mencari element)
     struct Node *iterDel = head;
@@ -94,6 +99,8 @@ int main() {
         printf("%d\n", iter->val);
         iter = iter->next;
     }
+
+
     // Extra Case 7: Delete tail
     /*
         tail = tail->prev;
@@ -112,6 +119,7 @@ int main() {
         printf("\n");
     */
 
+
     // Case 3: Insert Head
     /* 
         struct Node *tmp2 = createNode(20);
@@ -125,6 +133,7 @@ int main() {
             iter = iter->next;
         }
     */
+
 
     // Case 4: membuat insert node antara head dan tail, jika double linked list isinya baru head dan tail saja (2 node)
     /* Dibikin di file "case4.cpp" */

@@ -1,3 +1,10 @@
+// Anggota Kelompok :
+// 2602189303 - MICHAEL
+// 2602189221 - EVOTIANUS
+// 2602189190 - DAVIN RAFFILIO
+// 2602189934 - NEISYA HOLLY SANTOSO
+// 2602189272 - HOSANNIA MICHAELA MARSINTA HARDIPUTRI
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
